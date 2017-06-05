@@ -29,8 +29,11 @@ def output4 (var1 : String, var2 : String, var3 : Char, var4 : Char ) : String =
 }
 output4("Ha","llo",'a','e')
 
-def output5 (var1: Int = 2, var2: Int = 4) : Int = {
-  var1 + var2
-}
+def output5 (var1: Int = 2, var2: Int = 4, var3: Boolean = false) : Int = {
+  if (var3 == true){
+    var1 + var2 }
+    else var1 * var2
+  }
 
 output5 ()
+
