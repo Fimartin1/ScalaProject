@@ -1,0 +1,30 @@
+val hello = "hello world"
+println("Hello World")
+
+println(hello)
+
+def output1 (stringToOuput : Any) : Unit = {
+  println(stringToOuput)
+   }
+
+output1 ("Hello World")
+
+def output2 () : Any = {
+
+  "Hello World"
+}
+
+println(output2 () )
+
+output1("hi")
+
+def output3 (var1 : String, var2 : Int) : String = {
+  var1.substring( var1.length - var2, var1.length)
+}
+
+output3 ("Hello",3)
+
+def output4 (var1 :String, var2 : String, var3 : Int, Var4 : Int ) : String = {
+
+
+}
