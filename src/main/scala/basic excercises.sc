@@ -54,25 +54,47 @@ output6 ()
 //Conditionals 2
 def output7 (var1: Int = 2, var2: Int = 0) : Int = {
   if (var2 == 0 )
-    return 0
+    0
     else (var2)
-    return 2
+    2
 }
 
 output7 ()
 
 // Iteration
-def output8 (var1: String = "hi", var2: Int = 3)= {
-  for (var3 <- 1 to var2 ) {
+def output8 (var1: String = "hi", var2: Int = 3) = {
+  for (var3 <- 1 to var2) {
     println(var1)
   }
 }
 output8 ()
 
 // Iteration2
-def output9 (var1: String = "h", var2: Int = 4)= {
-  for (var3 <- 1 to var2 ) {
-    println(var1)
+//def output9 (var1: String = "h", var2: Int = 4) = {
+//  for (var3 <- 1 to var2) {
+//    yield(var1 + var2)
+//  }
+//}
+//output9 ()
+
+// Iteration2
+def output10 (var1: String = "h", var2: Int = 4) = {
+  for (var3 <- 1 to var2) {
+  for(var4 <- 1 to var2) {
+    print(var1)
+  }
+    println()
   }
 }
-output9 ()
+output10 ()
+
+// Iteration2 - second example
+def output11(var1:String = "h", var2: Int = 4)
+{
+  for(var3<-1 to var2)
+    {
+      println(var1*var2)
+    }
+}
+
+output11()
