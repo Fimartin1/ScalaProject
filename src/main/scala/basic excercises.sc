@@ -98,3 +98,34 @@ def output11(var1:String = "h", var2: Int = 4)
 }
 
 output11()
+
+// Iteration3
+
+/*def output12 (var1: String = "Fizz", var2: String = "Buzz", var3: Int = 15) = {
+  for (var4 <- 1 to var2) {
+    for(var5 <- 1 to var2) {
+      print(var1)
+    }
+    println()
+  }
+}
+output12 ()
+*/
+
+// Pattern Matching 1 - Conditionals 1
+def output13 (var1: Int = 2, var2: Int = 4) : Any = var1 match {
+  case var1 => println(var1)
+    2
+  case var2 => println(var2)
+    4
+}
+
+output13 ()
+
+//Pattern Matching 1 - Conditionals 2
+def output7 (var1: Int = 2, var2: Int = 0) : Int = {
+  case var2 == 0
+    0
+  else (var2)
+  2
+}
