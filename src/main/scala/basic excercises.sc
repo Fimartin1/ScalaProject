@@ -135,13 +135,23 @@ output14 (2,0, true)
 
 //Pattern Matching 2
 
-def swap (var1: Any) =
+/*def swap (var1: Any) =
   var1 match {
     case List(x,s) => List(s,x)
     case (a,x) => (x, a)
     case Array(a, x) => Array (x, a)
-    //case aarayCase: Array[Int] => Array(aarayCase(1), aarayCase.head)
+    //case arayCase: Array[Int] => Array(arayCase(1), arayCase.head)
     case _ => println("Couldn't match")
   }
-swap(Array(1,2, 3))
+swap(Array(1,2)) */
 
+// Pattern Matching swap2
+def swap2 (var1: Any) =
+  var1 match {
+    case listCase: List[Int] => List(listCase(1), listCase.head)
+    case (a,x) => (x, a)
+    case Array(a, x) => Array (x, a)
+    //case arrayCase: Array[Int] => Array(arrayCase(1), arrayCase.head)
+    case _ => println("Couldn't match")
+  }
+swap2(List(1,2, 3))
