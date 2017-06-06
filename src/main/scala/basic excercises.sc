@@ -120,12 +120,15 @@ def output13 (var1: Int = 2, var2: Int = 4) : Any = var1 match {
     4
 }
 
-output13 ()
+output13 (2, 4)
 
 //Pattern Matching 1 - Conditionals 2
-def output7 (var1: Int = 2, var2: Int = 0) : Int = {
-  case var2 == 0
-    0
-  else (var2)
-  2
+
+def output14 (var1: Int, var2: Int, var3:Boolean) : Any = var1 match {
+  case _ if var1 == 0 => (println(var2))
+  case _ if var2 == 0 => println(var1)
+  case _ => 0
 }
+
+output14 (2,0, true)
+
