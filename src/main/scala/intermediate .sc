@@ -10,15 +10,15 @@
 blackjack (22,22) */
 
 // Unique Sum
-/*def uniqueSum (a: Int, b: Int, c: Int) : Int = a match {
+def uniqueSum (a: Int, b: Int, c: Int) : Int = a match {
   case _ if a == 1 => a + b + c
-  case _ if a == b => 0
-  case _ if a == c => 0
+  case _ if a != b => 0
+  case _ if a != c => 0
   case _ if 1 == 1 => 0
   case _ => 0
 }
 uniqueSum (1,1,2)
-*/
+
 
 /*
 def blackjack (var1: Int, var2: Int) : Int = var1 match {
@@ -29,7 +29,7 @@ def blackjack (var1: Int, var2: Int) : Int = var1 match {
 
 blackjack (18,21)
 */
-
+/*
 // Too hot?
 def summer (temperature: Int, isSummer: Boolean) : Any = temperature match {
 
@@ -43,5 +43,5 @@ def summer (temperature: Int, isSummer: Boolean) : Any = temperature match {
 }
 summer (50, true)
 
-
+*/
 

@@ -102,16 +102,34 @@ import scala.collection.Map
 
 // Iteration3
 
-/*def output12 (var1: String = "Fizz", var2: String = "Buzz", var3: Int = 15) = {
-  for (var4 <- 1 to var2) {
-    for(var5 <- 1 to var2) {
-      print(var1)
-    }
-    println()
-  }
-}
-output12 ()
-*/
+//def fizzBuzz (i: Int): Unit =
+//  if (i % 3 == 0 && i % 5 == 0)
+//    println ("FizzBuzz")
+//  else if (i % 3 == 0)
+//    println("Fizz")
+//else if (i % 5 == 0)
+//    println("Buzz")
+//else
+//    println (i)
+//
+//for (i <- 1 to 15) {
+//    fizzBuzz(i)
+//}
+
+// Iteration3 - FizzBuzz2
+//val isModulus: (Int, Int) => Boolean = (i, j) => j % i
+//== 0
+//val modulus3 = isModulus(3, _)
+//val modulus5 = isModulus(5, _)
+//
+//val fizzBuzz: Int => String = {
+//  case i if modulus3(i) && modulus5(i) => "FizzBuzz"
+//  case i if modulus3(i)                => "Fizz"
+//  case i if modulus5(i)                => "Buzz"
+//  case i                               => i.toString
+//  }
+//Stream(1 to 100: _*).map(fizzBuzz).foreach(println)
+
 
 // Pattern Matching 1 - Conditionals 1
 //def output13 (var1: Int = 2, var2: Int = 4) : Any = var1 match {
@@ -125,13 +143,13 @@ output12 ()
 
 //Pattern Matching 1 - Conditionals 2
 
-def output14 (var1: Int, var2: Int, var3:Boolean) : Any = var1 match {
-  case _ if var1 == 0 => (println(var2))
-  case _ if var2 == 0 => println(var1)
-  case _ => 0
-}
-
-output14 (2,0, true)
+//def output14 (var1: Int, var2: Int, var3:Boolean) : Any = var1 match {
+//  case _ if var1 == 0 => (println(var2))
+//  case _ if var2 == 0 => println(var1)
+//  case _ => 0
+//}
+//
+//output14 (2,0, true)
 
 //Pattern Matching 2
 
@@ -146,12 +164,12 @@ output14 (2,0, true)
 swap(Array(1,2)) */
 
 // Pattern Matching swap2
-def swap2 (var1: Any) =
-  var1 match {
-    case listCase: List[Int] => List(listCase(1), listCase.head)
-    case (a,x) => (x, a)
-    case Array(a, x) => Array (x, a)
-    //case arrayCase: Array[Int] => Array(arrayCase(1), arrayCase.head)
-    case _ => println("Couldn't match")
-  }
-swap2(List(1,2, 3))
+//def swap2 (var1: Any) =
+//  var1 match {
+//    case listCase: List[Int] => List(listCase(1), listCase.head)
+//    case (a,x) => (x, a)
+//    case Array(a, x) => Array (x, a)
+//    //case arrayCase: Array[Int] => Array(arrayCase(1), arrayCase.head)
+//    case _ => println("Couldn't match")
+//  }
+//swap2(List(1,2, 3))
