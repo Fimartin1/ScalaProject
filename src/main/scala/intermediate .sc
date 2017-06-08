@@ -23,14 +23,15 @@ uniqueSum (1,1,2)
 // Too hot?
 def summer (temperature: Int, isSummer: Boolean) : Any = temperature match {
 
-  case _ if temperature == (60 > 90) | isSummer == true => true
-
-    case _ if isSummer == true  => temperature
+  case _ if temperature == (60 > 100) | isSummer == true => true
+  case _ if temperature == (60 > 100) | isSummer == false => false
+  case _ if temperature == (60 > 90) | isSummer == true  => true
+  case _ if temperature == (60 > 90) | isSummer == false  => false
 
 
 
 }
-summer (80, true)
+summer (50, true)
 
 
 
