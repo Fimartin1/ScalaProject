@@ -1,34 +1,44 @@
+
 /**
   * Created by Administrator on 12/06/2017.
   */
 class Garage {
 
-}
+  val employees: String
+  var open: Boolean = true
 
-  def addingVehicles {
 
-}
+  def openGarage(): Unit = {
 
-def removingVehicles: Unit = {
+    open = true
+  }
 
-}
+  def closeGarage(): Unit = {
 
-def registeringEmployees: Unit = {
+    open = true
+  }
 
-}
 
-def calculatingBills: Unit = {
+  def addingVehicles: Unit = {
 
-}
+  }
 
-def garageContent: Unit = {
+  }
 
-}
+  def removingVehicles: Unit = {
 
-def openGarage: Unit = {
+  }
 
-}
+  def registeringEmployees (employee: Employee) : Unit = {
+    employees += (employee.id -> employee)
 
-def closeGarage: Unit = {
+  }
 
-}
+  def calculatingBills: Unit = {
+
+  }
+
+  def garageContent: Unit = {
+
+  }
+
