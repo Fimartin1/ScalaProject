@@ -15,17 +15,17 @@ class Garage {
 
   def closeGarage(): Unit = {
 
-    open = true
+    open = false
+      }
+
+
+  def addVehicles (vehicle: Vehicle): Unit = {
+    vehicle =+ ( vehicle.registration -> vehicle )
   }
 
-
-  def addingVehicles: Unit = {
-
   }
 
-  }
-
-  def removingVehicles: Unit = {
+  def removeVehicles: Unit = {
 
   }
 
